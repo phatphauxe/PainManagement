@@ -1,0 +1,44 @@
+.builder-container{
+  width: 400px;
+  margin: 0 auto;
+  overflow-x: hidden;
+
+
+  .step-title {
+    width: 50%;
+    margin: 0 auto;
+    span {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  .step-container{
+    display: none;
+
+   &.step-one{
+     &.active {
+       display: inline-block;
+     }
+     button {
+       font-size: 24px;
+       width:175px;
+       height:175px;
+       background-color:  #f3f3f3;
+       margin: 10px;
+     }
+   }
+
+   &.step-two {
+     &.active {
+       display: block;
+     }
+   }
+
+ }
+
+}
+
+
+

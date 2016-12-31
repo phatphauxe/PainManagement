@@ -1,15 +1,26 @@
 <div>
   <div>
-    <div>
-      <h3>Select a Character</h3>
-    </div>
-    <div style="width: 400px">
-    <div *ngFor="let char of chars" style="display: inline-block">
-        <button type="button" style="font-size: 24px; width:175px; height:175px; background-color:  #f3f3f3; margin: 10px;">
+
+    <div class="builder-container ">
+      <div class="step-title">
+        <span >{{stepTitle()}}</span>
+      </div>
+    <div *ngFor="let char of chars" class="step-container step-one {{getActive(0)}}">
+
+        <button type="button" style="" (click)="selectClass(char)">
           {{char.name}}
 
         </button>
     </div>
+    <div class="step-container step-two {{getActive(1)}}">
+      <form>
+        <select (change)='logChange($event)'>
+          <option  *ngFor="let opt of campaignTypes" [value]="opt.value" >{{opt.name}}</option>
+        </select>
+      </form>
+      <button (click)="resetBuild()">Return</button>
     </div>
+    </div>
+
   </div>
 </div>

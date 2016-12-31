@@ -1,0 +1,26 @@
+.builder-container {
+  width: 400px;
+  margin: 0 auto;
+  overflow-x: hidden; }
+  .builder-container .step-title {
+    width: 50%;
+    margin: 0 auto; }
+    .builder-container .step-title span {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 24px;
+      font-weight: 600; }
+  .builder-container .step-container {
+    display: none; }
+    .builder-container .step-container.step-one.active {
+      display: inline-block; }
+    .builder-container .step-container.step-one button {
+      font-size: 24px;
+      width: 175px;
+      height: 175px;
+      background-color: #f3f3f3;
+      margin: 10px; }
+    .builder-container .step-container.step-two.active {
+      display: block; }
+
+/*# sourceMappingURL=character-builder.style.css.map */
